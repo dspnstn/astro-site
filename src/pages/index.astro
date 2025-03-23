@@ -4,9 +4,9 @@ import Layout from "../layouts/Layout.astro";
 import YT from "../components/YT.astro";
 const pageTitle = "Hello! Welcome to my site";
 ---
-<Layout pageTitle={pageTitle}>	
-	<ContentLayout>
-		<p>Welcome to my site!</p>
-		<YT videoID="dQw4w9WgXcQ?si=PuNXhkj3UIyg_tmM" />
-	</ContentLayout>
+<Layout pageTitle={pageTitle}>		
+	<ContentLayout hasVideo={true}>
+		<p>Welcome to my site!</p>	
+		<YT videoID="dQw4w9WgXcQ?si=PuNXhkj3UIyg_tmM" />	
+	</ContentLayout>	
 </Layout>
