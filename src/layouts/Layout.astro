@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import ContentLayout from "./ContentLayout.astro";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 ---
@@ -17,8 +18,7 @@ const { pageTitle } = Astro.props;
     bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-500 to-90%
     flex flex-col">
 		<Header />
-        <slot class="slot flex justify-center grow
-        p-[8px] border-b-2 border-s-black" />
+        <slot />
 		<Footer />
 		<script>
 			import "../scripts/menu.js";

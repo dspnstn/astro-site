@@ -1,11 +1,11 @@
 ---
+import ContentLayout from "../layouts/ContentLayout.astro";
 import Layout from "../layouts/Layout.astro";
 const pageTitle = "About me";
 ---
 
 <Layout pageTitle={pageTitle}>
-  <h1>{pageTitle}</h1>
-
+  <ContentLayout>
   <p>My name is Daniil.</p>
   <p>Here are my skills:</p>
   <ul>
@@ -14,4 +14,5 @@ const pageTitle = "About me";
     <li>Tailwind</li>
     <li>Astro</li>
   </ul>
+  </ContentLayout>
 </Layout>

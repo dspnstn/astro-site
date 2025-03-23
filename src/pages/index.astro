@@ -1,6 +1,10 @@
 ---
+import ContentLayout from "../layouts/ContentLayout.astro";
 import Layout from "../layouts/Layout.astro";
 const pageTitle = "Hello! Welcome to my site";
 ---
-<Layout pageTitle={pageTitle}>	<h2>sdkfjlksdjflkI</h2>
+<Layout pageTitle={pageTitle}>	
+	<ContentLayout>
+		<h2>sdkfjlksdjflkI</h2>
+	</ContentLayout>
 </Layout>
