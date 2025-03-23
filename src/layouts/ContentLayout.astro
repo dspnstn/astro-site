@@ -3,6 +3,6 @@ import "../styles/global.css";
 const { hasVideo = false } = Astro.props;
 ---
 <div class={`content p-2 ${hasVideo ? '' 
-    : 'flex-col justify-items-center grow'}`}>
+    : 'flex-col justify-items-center'}`}>
     <slot />
 </div>
