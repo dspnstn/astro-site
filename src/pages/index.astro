@@ -9,9 +9,12 @@ const pageTitle = "Hello! Welcome to my site";
 	<ContentLayout hasVideo={true}>
 		<p class="flex justify-center">Welcome to my site!</p>
 		<YT videoID="dQw4w9WgXcQ?si=PuNXhkj3UIyg_tmM" />
-		<p class="flex justify-center">Contact me directly via <span class="email ml-2 text-indigo-900"> daniil.espenstein@gmail.com</span>, or fill out this form below:</p>
+		<div class="for-mail flex-col text-center">
+			Contact me directly via <span class="email ml-2 text-indigo-900"> 
+				daniil.espenstein@gmail.com</span>, or fill out this form below:
+			<p class="flex "></p>
 		<form
-			class="form mx-auto text-center"
+			class="form mx-auto place-content-center"
 			action="mailto:daniil.espenstein@gmail.com"
 			enctype="text/plain"
 		>
@@ -25,5 +28,6 @@ const pageTitle = "Hello! Welcome to my site";
 			</div>
 			<button class="" type="submit">Send</button>
 		</form>
+		</div>
 	</ContentLayout>
 </Layout>
