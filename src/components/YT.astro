@@ -2,7 +2,8 @@
 const { videoID } = Astro.props;
 ---
 
-<div class="YT-container relative pb-[56.25%] h-0 overflow-hidden md:pb-[75%]">
+<div class="YT-container 
+relative pb-[56.25%] h-0 overflow-hidden scale-90 md:scale-70 md:max-w-2xl md:max-w-full mx-auto">
     <iframe class="absolute top-0 left-0 w-full h-full"
       src={`https://www.youtube.com/embed/${videoID}`}
       title="YouTube video player"
