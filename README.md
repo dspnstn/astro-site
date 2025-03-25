@@ -10,7 +10,7 @@ npm create astro@latest -- --template minimal
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-You can view the result at the https://hello-welcome-to-my-site.netlify.app/
+You can view the result at https://hello-welcome-to-my-site.netlify.app/
 
 ## 🚀 Project Structure
 
