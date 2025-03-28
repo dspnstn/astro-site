@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import ContentLayout from "../layouts/ContentLayout.astro";
 import Layout from "../layouts/Layout.astro";
 const pageTitle = "About me";
@@ -18,8 +19,14 @@ const pageTitle = "About me";
   </ul>
   <p class="mt-3">And this is a picture of a dragon:</p>
   <a href="https://ibb.co/XgXm4Hq">
-    <img src="https://i.ibb.co/QR9sc04/dragon.jpg" 
-    alt="dragon" border-0>
+    <Image
+    loading={"eager"};
+    src="https://i.ibb.co/QR9sc04/dragon.jpg" 
+    widths={[400, 800, 1250]};
+    width={1200};
+    height={1250};
+    class="object-fill w-full"
+    alt="dragon" />
   </a>
   </ContentLayout>
 </Layout>
